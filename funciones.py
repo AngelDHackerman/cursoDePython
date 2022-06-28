@@ -19,3 +19,15 @@ if opcion == 2:
   conversacion('Elegiste la opcion 2')
 if opcion == 3:
   conversacion('Elegiste la opcion 3')
+else:
+  print('Escribiste la opcion incorrecta')
+
+
+
+def suma(a, b):
+  print('Se suman 2 numeros')
+  resultado = a + b
+  return resultado
+
+rta = suma(1, 4)
+print(rta)
