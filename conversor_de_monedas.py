@@ -1,3 +1,11 @@
+def conversor (tipo_pesos, valor_dolar):
+  pesos = input('Cuantos pesos ' + tipo_pesos + ' tienes?: ')
+  pesos = float(pesos)
+  dolares = pesos / valor_dolar
+  dolares = round(dolares, 2)
+  dolares = str(dolares)
+  print('Tienes $' + dolares + 'dolares')
+
 # De quetzales a dolares
 
 # quetzales = input('Cuantos quetzales tienes?: ')
@@ -24,29 +32,11 @@ Elige una opcion: '''
 opcion = int(input(menu))
 
 if opcion == 1:
-  pesos = input('Cuantos pesos colombianos tienes?: ')
-  pesos = float(pesos)
-  valor_dolar = 4132
-  dolares = pesos / valor_dolar
-  dolares = round(dolares, 2)
-  dolares = str(dolares)
-  print('Tienes $' + dolares + 'dolares')
+  conversor('colombianos', 4060)
 elif opcion == 2:
-  pesos = input('Cuantos pesos argentinos tienes?: ')
-  pesos = float(pesos)
-  valor_dolar = 160
-  dolares = pesos / valor_dolar
-  dolares = round(dolares, 2)
-  dolares = str(dolares)
-  print('Tienes $' + dolares + 'dolares')
+  conversor('argentinos', 120)
 elif opcion == 3:
-  pesos = input('Cuantos pesos colombianos tienes?: ')
-  pesos = float(pesos)
-  valor_dolar = 20
-  dolares = pesos / valor_dolar
-  dolares = round(dolares, 2)
-  dolares = str(dolares)
-  print('Tienes $' + dolares + 'dolares')
+  conversor('mexicanos', 24)
 else:
   print('Ingresa una opcion correcta por favor.')
 
