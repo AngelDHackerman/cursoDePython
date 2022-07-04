@@ -1,7 +1,7 @@
 def es_palindromo(palabra):
     palabra = palabra.replace(' ', '').lower()
     
-    if palabra[::] == palabra[::-1]: # palabra[::-1], asi se invierten las palabras en python
+    if palabra[::] == palabra[::-1]: # ? palabra[::-1], asi se invierten las palabras en python
         return True
     
     else:
