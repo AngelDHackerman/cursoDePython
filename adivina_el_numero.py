@@ -6,10 +6,9 @@ def run():
   while numero_elegido != numero_aleatorio: 
     if numero_elegido < numero_aleatorio:
       print('Busca un numero mas grande')
-      numero_elegido = int(input('Elige otro numero: '))
     else:
       print('Busca un numero mas pequeño')
-      numero_elegido = int(input('Elige otro numero: '))
+    numero_elegido = int(input('Elige otro numero: '))
   print('Ganaste !')
 
 
